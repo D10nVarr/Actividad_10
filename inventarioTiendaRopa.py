@@ -37,12 +37,10 @@ for i in range(produtos):
         "Cantidad en stock":stock,
     }
 
-    contador=1
     if categoria not in cant_categorias:
-        cant_categorias[categoria]=contador
-        contador+=1
+        cant_categorias[categoria] = 1
     else:
-        cant_categorias[categoria]=1
+        cant_categorias[categoria]+=1
 
 print(f"\n-----INVENTARIO GENERAL-----")
 
